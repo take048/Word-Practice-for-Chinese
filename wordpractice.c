@@ -53,14 +53,14 @@ int main(int argc,char*argv[])
   printf("回答形式　日本語>>1:中国語>>2:ピンイン>>3\n>>");
   scanf("%d",&ans);//回答形式の選択
   printf("ランダムモード>>1:連続モード>>2\n>>");
-  scanf("%d",&fr);//連続回答種類の選択
+  scanf("%d",&fr);//出題形式の選択
 
   if(ques==ans){return -1;}//問題形式と回答形式が同じ時、終了
   if(ques!=1&&ques!=2&&ques!=3){return -1;}//問題形式が1、2、3以外の時、終了
   if(ans!=1&&ans!=2&&ans!=3){return -1;}//回答形式が1、2、3以外の時、終了
-  if(fr!=1&&fr!=2){return -1;}//連続回答種類が1、2以外の時、終了
+  if(fr!=1&&fr!=2){return -1;}//出題形式が1、2以外の時、終了
 
-  if(fr==1){//連続回答種類がランダムモードの時
+  if(fr==1){//出題形式がランダムモードの時
     while(1){//強制終了されるまで無限ループ
       fp=fopen(ll1,"r+");//繰り返す毎に開きなおす
       if(fp == NULL) {//ファイルが開ない時、終了
@@ -80,7 +80,7 @@ int main(int argc,char*argv[])
 
       fclose(fp);//ファイルを閉じる
     }
-  }else if(fr==2){//連続回答種類が連続モードの時
+  }else if(fr==2){//出題形式が連続モードの時
     fp=fopen(ll1,"r+");//ファイルを開く
     if(fp == NULL) {//ファイルが開ない場合終了
       return -1;
