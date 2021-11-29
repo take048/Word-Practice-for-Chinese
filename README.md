@@ -21,6 +21,7 @@ gcc RPGHead.h RPGMain.c RPGArith.c
 ```
 gcc RPGHead.h RPGMain.c RPGArith.c -finput-charset=UTF-8 -fexec-charset=CP932
 a.exe
+```
 
 # データファイルの準備
 学習を行うためには、本アプリケーションに使用するテキストファイルを用意する必要があります。
