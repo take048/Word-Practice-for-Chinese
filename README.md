@@ -10,7 +10,7 @@ Word-Practice-for-Chineseは中国語の単語の学習をコンソール上で�
 
 例：MacOSの場合
 ```
-gcc RPGHead.h RPGMain.c RPGArith.c
+gcc wordpractice.c
 ./a.out
 ```
 
@@ -19,7 +19,7 @@ gcc RPGHead.h RPGMain.c RPGArith.c
 
 例：Windowsの場合
 ```
-gcc RPGHead.h RPGMain.c RPGArith.c -finput-charset=UTF-8 -fexec-charset=CP932
+gcc wordpractice.c -finput-charset=UTF-8 -fexec-charset=CP932
 a.exe
 ```
 
